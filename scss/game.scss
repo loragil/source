@@ -6,9 +6,25 @@
 @import "compass/reset";
 
 BODY{
-	width: 100%;
-	& DIV{
-		background-color: red;
-		float: left;
+	font-size: 62.5%;	
+}
+
+TABLE{
+	width:100%;
+}
+
+.monopoly-board{
+	width: 95%;
+	margin:2.5em auto;
+	
+	TD{
+		height:6.5em;
+		width: 8.6%;
+		border:1px solid #000000;
+		text-align: center;
 	}
+
+	.corner{
+		width: 8.8%;		
+	}	
 }

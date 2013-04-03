@@ -69,10 +69,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 8, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
 BODY {
+  font-size: 62.5%;
+}
+
+/* line 12, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+TABLE {
   width: 100%;
 }
-/* line 10, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-BODY DIV {
-  background-color: red;
-  float: left;
+
+/* line 16, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly-board {
+  width: 95%;
+  margin: 2.5em auto;
+}
+/* line 20, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly-board TD {
+  height: 6.5em;
+  width: 8.6%;
+  border: 1px solid black;
+  text-align: center;
+}
+/* line 27, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly-board .corner {
+  width: 8.8%;
 }
