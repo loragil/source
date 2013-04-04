@@ -27,6 +27,10 @@ TABLE{
 		height: 13em;
 	}
 
+	.corner{
+		width: 8.8% !important;		
+	}
+
 	TD{
 		border:1px solid #000000;
 		text-align: center;
@@ -60,15 +64,18 @@ TABLE{
 		&.celest{
 			background-color: #1eaaeb;
 		}
-	}
-
-	.corner{
-		width: 8.8%;		
 	}	
 
 	.middle{	
 		position: relative;	
 		
+		.logo-bg{
+			background: url(../img/monopoly-bg.png) no-repeat center;
+			height: 580px;
+			background-size: 50% 90%;	
+			-webkit-filter: blur(4px);
+		}
+
 		DIV{
 			display: block;
 			position: absolute;
