@@ -3,107 +3,133 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; acharset=UTF-8">
 	<title>The Game</title>
+	<!-- SCRIPTS -->
 	<script src="js/jquery.1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+	<!-- STYLES -->	
 	<link rel="stylesheet" href="css/game.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
-	<table class="monopoly-board" border="1">
-		<tr class="horizontal">
-			<td class="corner tl"><span>Free Parking</span></td>
-			<td class="red">1</td>
-			<td class="chance"><span>Chance</span></td>
-			<td class="red">3</td>
-			<td class="red">4</td>
-			<td class="transport"><span>Rail Road 3</span></td>
-			<td class="yellow">6</td>
-			<td class="yellow">7</td>
-			<td class="utility"><span>Water Works</span></td>
-			<td class="yellow">9</td>
-			<td class="corner tr"><span>Go To Jail<br />Muuhahahah</span></td>
-		</tr>
-		<tr>
-			<td>
-				<table class="vertical">
-					<tr>
-						<td class="orange">39</td>
-					</tr>
-					<tr>
-						<td class="orange">38</td>
-					</tr>
-					<tr>
-						<td class="chest"><span>Community Chest</span></td>
-					</tr>
-					<tr>
-						<td class="orange">36</td>
-					</tr>
-					<tr>
-						<td class="transport"><span>Rail Road 2</span></td>
-					</tr>
-					<tr>
-						<td class="pink">34</td>
-					</tr>
-					<tr>
-						<td class="pink">33</td>
-					</tr>
-					<tr>
-						<td class="utility"><span>Electric Company</span></td>
-					</tr>
-					<tr>
-						<td class="pink">31</td>
-					</tr>
-				</table>
-			</td>
-			<td colspan="9" class="middle">
-				<section class="logo-bg"></section>
-				<div class="chest"><span>Community Chest</span></div>
-				<div class="chance"><span>Chance</span></div>
-			</td>
-			<td>
-				<table class="vertical">
-					<tr>
-						<td class="green">11</td>
-					</tr>
-					<tr>
-						<td class="green">12</td>
-					</tr>
-					<tr>
-						<td class="chest"><span>Community Chest</span></td>
-					</tr>
-					<tr>
-						<td class="green">14</td>
-					</tr>
-					<tr>
-						<td class="transport"><span>Rail Road 4</span></td>
-					</tr>
-					<tr>
-						<td class="chance"><span>Chance</span></td>
-					</tr>
-					<tr>
-						<td class="blue">17</td>
-					</tr>
-					<tr>
-						<td class="tax"><span>Luxury Tax</span></td>
-					</tr>
-					<tr>
-						<td class="blue">19</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<tr class="horizontal">
-			<td class="corner bl"><span>JAIL :(</span></td>
-			<td class="celest">29</td>
-			<td class="celest">28</td>
-			<td class="chance"><span>Chance</span></td>
-			<td class="celest">26</td>
-			<td class="transport"><span>Rail Road 1</span></td>
-			<td class="tax"><span>Income Tax</span></td>
-			<td class="purple">23</td>
-			<td class="chest"><span>Community Chest</span></td>
-			<td class="purple">21</td>
-			<td class="corner br"><span>GO! <br/> collect 200$ as you pass</span></td>
-		</tr>
-	</table>
+	<div class="monopoly">
+		<!-- DASH-BOARD -->
+		<div class="dashboard">
+			<div class="chat">
+				<div class="messages"></div>
+				<div>
+					<input type="text" class="write">
+					<input type="text" class="send">
+				</div>
+			</div>
+		</div>
+
+		<!-- GAME-BOARD -->
+		<table class="monopoly-board" border="1">
+			<tr class="horizontal">
+				<!-- TOP SIDE BOARD SPACES -->
+				<td class="corner tl"><span>Free Parking</span></td>
+				<td class="red">1</td>
+				<td class="chance"><span>Chance</span></td>
+				<td class="red">3</td>
+				<td class="red">4</td>
+				<td class="transport"><span>Rail Road 3</span></td>
+				<td class="yellow">6</td>
+				<td class="yellow">7</td>
+				<td class="utility"><span>Water Works</span></td>
+				<td class="yellow">9</td>
+				<td class="corner tr"><span>Go To Jail<br />Muuhahahah</span></td>
+			</tr>
+			<tr>
+				<td>
+					<!-- LEFT SIDE BOARD SPACES -->
+					<table class="vertical">
+						<tr>
+							<td class="orange">39</td>
+						</tr>
+						<tr>
+							<td class="orange">38</td>
+						</tr>
+						<tr>
+							<td class="chest"><span>Community Chest</span></td>
+						</tr>
+						<tr>
+							<td class="orange">36</td>
+						</tr>
+						<tr>
+							<td class="transport"><span>Rail Road 2</span></td>
+						</tr>
+						<tr>
+							<td class="pink">34</td>
+						</tr>
+						<tr>
+							<td class="pink">33</td>
+						</tr>
+						<tr>
+							<td class="utility"><span>Electric Company</span></td>
+						</tr>
+						<tr>
+							<td class="pink">31</td>
+						</tr>
+					</table>
+				</td>
+				<td colspan="9" class="middle">
+					<!-- CENTER OF BOARD -->
+					<section class="logo-bg"></section>
+					<!-- COMMUNITY CHEST DECK -->
+					<div class="deck chest"><span>Community Chest</span></div>
+					<!-- DICE -->
+					<div class="dice dice-1"><span>5</span></div>
+					<div class="dice dice-2"><span>6</span></div>
+					<!-- CHANCE DECK -->
+					<div class="deck chance"><span>Chance</span></div>
+				</td>
+				<td>
+					<!-- RIGHT SIDE BOARD SPACES -->
+					<table class="vertical">
+						<tr>
+							<td class="green">11</td>
+						</tr>
+						<tr>
+							<td class="green">12</td>
+						</tr>
+						<tr>
+							<td class="chest"><span>Community Chest</span></td>
+						</tr>
+						<tr>
+							<td class="green">14</td>
+						</tr>
+						<tr>
+							<td class="transport"><span>Rail Road 4</span></td>
+						</tr>
+						<tr>
+							<td class="chance"><span>Chance</span></td>
+						</tr>
+						<tr>
+							<td class="blue">17</td>
+						</tr>
+						<tr>
+							<td class="tax"><span>Luxury Tax</span></td>
+						</tr>
+						<tr>
+							<td class="blue">19</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr class="horizontal">
+				<!-- BOTTOM SIDE BOARD SPACES -->
+				<td class="corner bl"><span>JAIL :(</span></td>
+				<td class="celest">29</td>
+				<td class="celest">28</td>
+				<td class="chance"><span>Chance</span></td>
+				<td class="celest">26</td>
+				<td class="transport"><span>Rail Road 1</span></td>
+				<td class="tax"><span>Income Tax</span></td>
+				<td class="purple">23</td>
+				<td class="chest"><span>Community Chest</span></td>
+				<td class="purple">21</td>
+				<td class="corner br"><span>GO! <br/> collect 200$ as you pass</span></td>
+			</tr>
+		</table>
+	</div>
 </body>
 </html>

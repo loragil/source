@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,89 +63,107 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+/* line 5, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
 BODY {
   font-size: 62.5%;
 }
 
-/* line 12, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-TABLE {
+/* line 9, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly {
+  margin: 2em;
+  /************************ DASH BOARD ************************/
+  /************************ GAME BOARD ************************/
+}
+/* line 14, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .dashboard {
+  width: 25%;
+  float: left;
+}
+/* line 19, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .dashboard .chat .messages {
+  height: 35em;
+  margin-right: 2em;
+  border: 2px solid #aaaaaa;
+}
+/* line 28, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board {
+  width: 75%;
+  float: right;
+}
+/* line 32, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TABLE {
   width: 100%;
 }
-
-/* line 16, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board {
-  width: 95%;
-  margin: 2em auto;
-}
-/* line 20, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board .vertical TD {
+/* line 36, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .vertical TD {
   width: 8.6%;
   height: 6.5em;
 }
-/* line 25, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board .horizontal TD {
+/* line 41, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .horizontal TD {
   width: 7%;
-  height: 13em;
+  height: 7em;
 }
-/* line 30, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board .corner {
-  width: 8.8% !important;
+/* line 46, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .corner {
+  width: 5.5% !important;
 }
-/* line 34, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board TD {
+/* line 50, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TD {
   border: 1px solid black;
   text-align: center;
 }
-/* line 38, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board TD SPAN {
+/* line 54, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TD SPAN {
   font-size: 2em;
 }
-/* line 43, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board TD.red {
+/* line 58, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TD.red {
   background-color: #eb4b35;
 }
-/* line 46, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board TD.orange {
+/* line 61, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TD.orange {
   background-color: #eba535;
 }
-/* line 49, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board TD.yellow {
+/* line 64, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TD.yellow {
   background-color: #f2e231;
 }
-/* line 52, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board TD.green {
+/* line 67, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TD.green {
   background-color: #50c24d;
 }
-/* line 55, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board TD.blue {
+/* line 70, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TD.blue {
   background-color: #4c78e9;
 }
-/* line 58, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board TD.pink {
+/* line 73, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TD.pink {
   background-color: #da67d9;
 }
-/* line 61, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board TD.purple {
+/* line 76, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TD.purple {
   background-color: #8465e9;
 }
-/* line 64, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board TD.celest {
+/* line 79, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board TD.celest {
   background-color: #1eaaeb;
 }
-/* line 69, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board .middle {
+/* line 84, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .middle {
   position: relative;
+  vertical-align: top;
 }
-/* line 72, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board .middle .logo-bg {
+/* line 88, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .middle .logo-bg {
   background: url(../img/monopoly-bg.png) no-repeat center;
-  height: 580px;
-  background-size: 50% 90%;
-  -webkit-filter: blur(4px);
+  background-size: contain;
+  height: 158px;
+  margin: 2em;
+  opacity: .3;
 }
-/* line 79, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board .middle DIV {
+/* line 96, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .middle .deck {
   display: block;
   position: absolute;
   border: 2px solid #aaaaaa;
@@ -160,11 +174,31 @@ TABLE {
   margin-top: -6em;
   -webkit-transform: rotate(-45deg);
 }
-/* line 90, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board .middle DIV.chest {
+/* line 107, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .middle .deck.chest {
   left: 10%;
 }
-/* line 94, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly-board .middle DIV.chance {
+/* line 111, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .middle .deck.chance {
   right: 10%;
+}
+/* line 116, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .middle .dice {
+  width: 5em;
+  height: 5em;
+  line-height: 5em;
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+  border: 2px solid black;
+}
+/* line 125, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .middle .dice.dice-1 {
+  left: 50%;
+  margin-left: -5.5em;
+}
+/* line 130, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly .monopoly-board .middle .dice.dice-2 {
+  right: 50%;
+  margin-right: -5.5em;
 }

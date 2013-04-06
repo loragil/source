@@ -1,98 +1,136 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
+@import '_skin.default';
+
 
 BODY{
 	font-size: 62.5%;	
 }
 
-TABLE{
-	width:100%;
-}
+.monopoly{
+	margin:2em;
 
-.monopoly-board{
-	width: 95%;
-	margin:2em auto;
-	
-	.vertical TD{
-		width: 8.6%;
-		height: 6.5em;
+
+	/************************ DASH BOARD ************************/
+	.dashboard{
+		width:25%;
+		float: left;
+		
+		.chat{
+			.messages{
+				height:35em;
+				margin-right:2em;
+				border:2px solid #aaa;
+			}
+		}
 	}
 
-	.horizontal TD{
-		width: 7%;
-		height: 13em;
-	}
-
-	.corner{
-		width: 8.8% !important;		
-	}
-
-	TD{
-		border:1px solid #000000;
-		text-align: center;
+	/************************ GAME BOARD ************************/
+	.monopoly-board{
+		width: 75%;
+		float: right;
 		
-		SPAN{
-			font-size: 2em;
+		TABLE{
+			width:100%;
 		}
 
-		
-		&.red{
-			background-color: #eb4b35;
-		}
-		&.orange{
-			background-color: #eba535;
-		}
-		&.yellow{
-			background-color: #f2e231;
-		}
-		&.green{
-			background-color: #50c24d;
-		}
-		&.blue{
-			background-color: #4c78e9;
-		}
-		&.pink{
-			background-color: #da67d9;
-		}
-		&.purple{
-			background-color: #8465e9;
-		}
-		&.celest{
-			background-color: #1eaaeb;
-		}
-	}	
-
-	.middle{	
-		position: relative;	
-		
-		.logo-bg{
-			background: url(../img/monopoly-bg.png) no-repeat center;
-			height: 580px;
-			background-size: 50% 90%;	
-			-webkit-filter: blur(4px);
+		.vertical TD{
+			width: 8.6%;
+			height: 6.5em;
 		}
 
-		DIV{
-			display: block;
-			position: absolute;
-			border:2px solid #aaa;
-			width: 16em;
-			height: 12em;
-			line-height: 12em;
-			top: 50%;
-			margin-top: -6em;
-			-webkit-transform: rotate(-45deg);
+		.horizontal TD{
+			width: 7%;
+			height: 7em;
+		}
+
+		.corner{
+			width: 5.5% !important;		
+		}
+
+		TD{
+			border:1px solid #000000;
+			text-align: center;
 			
-			&.chest{
-				left: 10%;
+			SPAN{
+				font-size: 2em;
+			}
+			
+			&.red{
+				background-color: #eb4b35;
+			}
+			&.orange{
+				background-color: #eba535;
+			}
+			&.yellow{
+				background-color: #f2e231;
+			}
+			&.green{
+				background-color: #50c24d;
+			}
+			&.blue{
+				background-color: #4c78e9;
+			}
+			&.pink{
+				background-color: #da67d9;
+			}
+			&.purple{
+				background-color: #8465e9;
+			}
+			&.celest{
+				background-color: #1eaaeb;
+			}
+		}	
+
+		.middle{	
+			position: relative;	
+			vertical-align: top;
+			
+			.logo-bg{
+				background: url(../img/monopoly-bg.png) no-repeat center;
+				background-size: contain;
+				height: 158px;
+				margin: 2em;
+				opacity: .3;
 			}
 
-			&.chance{
-				right: 10%;
+			.deck{
+				display: block;
+				position: absolute;
+				border:2px solid #aaa;
+				width: 16em;
+				height: 12em;
+				line-height: 12em;
+				top: 50%;
+				margin-top: -6em;
+				-webkit-transform: rotate(-45deg);
+				
+				&.chest{
+					left: 10%;
+				}
+
+				&.chance{
+					right: 10%;
+				}
+			}
+
+			.dice{
+				width: $dice-size;
+				height: $dice-size;
+				line-height: $dice-size;
+				top: 50%;
+				margin-top: -($dice-size / 2);
+				position: absolute;
+				border:2px solid #000;
+				
+				&.dice-1{
+					left:50%;	
+					margin-left: -(($dice-size) + ($dice-size * 0.1));			
+				}
+
+				&.dice-2{
+					right:50%;
+					margin-right: -(($dice-size) + ($dice-size * 0.1));
+				}
 			}
 		}
 	}
