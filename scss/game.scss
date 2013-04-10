@@ -4,7 +4,8 @@
 
 /************************ GENERAL STYLES ************************/
 BODY{
-	font-size: 62.5%;	
+	font-size: 62.5%;
+	font-family: arial;	
 	
 	*{
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -66,13 +67,13 @@ BODY{
 				height: 3em;
 				border-radius:$main-corner-radius;
 				padding: 0.3em 0.5em;
-					
+
 				.write{
 					width: 70%;
 					position: absolute;
 					left:.5em;
 					padding: 0 .5em;
-					}
+				}
 
 				.send{
 					width: 25%;
@@ -110,7 +111,7 @@ BODY{
 	}
 
 	/************************ GAME BOARD ************************/
-	.monopoly-board{
+	.gameboard{
 		width: 75%;
 		float: right;
 		
@@ -175,7 +176,7 @@ BODY{
 				background-size: contain;
 				height: 158px;
 				margin: 2em;
-				opacity: .3;
+				//opacity: .3;
 			}
 
 			.deck{
@@ -216,7 +217,75 @@ BODY{
 					right:50%;
 					margin-right: -(($dice-size) + ($dice-size * 0.1));
 				}
+
+				SPAN{
+					opacity:1;
+					transition: opacity .25s ease-in-out;
+				}
+			}
+
+			.notifications{
+				width:84%;
+				height: 10em;
+				background-color: #8465e9;
+				position: absolute;
+				bottom: 5em;
+				left:8%;
+				padding: 1em;
+				
+				.message{
+					color: #AEADE9;
+					margin-top: 1em;
+					display: block;
+				}
+
+				.close{
+					width: 3em;
+					height: 3em;
+					position: absolute;
+					right: -1em;
+					top: -1em;
+					color:#aaa;
+					border: 2px solid #e6e6e6;
+					border-radius: 2em;
+					padding: 0.4em 0;
+					cursor:pointer;
+					background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(#f2f2f2, #cccccc);
+					box-shadow: inset 0 1px 1px rgba(191, 191, 191, 0.75), 0 2px 1px rgba(0, 0, 0, 0.25);
+					
+					&:hover{
+						background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(#b3b3b3, #8c8c8c);
+						color:#e6e6e6;
+					}
+
+					SPAN{
+						font-size: 2em;
+					}
+				}
 			}
 		}
 	}
-}
+
+	/************************ EFFECTS ************************/
+	.fade-out{
+		opacity: 0;
+		-webkit-transform: scale(.75);
+   		transition: all .5s ease-in-out;
+	}
+
+	.fade-in{
+		opacity: 1;
+		-webkit-transform: scale(1);
+   		transition: all .25s ease-in-out;
+	}
+
+	.rotate{
+		-webkit-transform: rotate(720deg);
+		transition: all  $transform-rotate-duration ease-in-out;
+		
+		SPAN{
+			opacity:0 !important;
+			transition: opacity .5s ease-in-out;
+		}
+	}
+} 
