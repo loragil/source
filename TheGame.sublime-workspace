@@ -4,16 +4,64 @@
 		"selected_items":
 		[
 			[
+				"n",
+				"alternate  (value)"
+			],
+			[
+				"anim",
+				"animdir	animation-direction: ${1:normal};"
+			],
+			[
+				"fa",
+				"fadeOutDown"
+			],
+			[
+				"b",
+				"bounceIn"
+			],
+			[
+				"d",
+				"dieA"
+			],
+			[
+				"r",
+				"rotate"
+			],
+			[
+				"de",
+				"debug"
+			],
+			[
+				"e",
+				"elements"
+			],
+			[
+				"ga",
+				"gameObj"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"ba",
+				"background-color:   (property)"
+			],
+			[
+				"disp",
+				"display:   (property)"
+			],
+			[
+				"po",
+				"pos-a	position: absolute;"
+			],
+			[
 				"fo",
 				"font-style"
 			],
 			[
 				"p",
 				"padding"
-			],
-			[
-				"ba",
-				"background-color:   (property)"
 			],
 			[
 				"ma",
@@ -38,10 +86,6 @@
 			[
 				"t",
 				"table-cell"
-			],
-			[
-				"r",
-				"right:   (property)"
 			],
 			[
 				"bo",
@@ -70,10 +114,6 @@
 			[
 				"max",
 				"maxOffset  (variable)"
-			],
-			[
-				"de",
-				"deltaX"
 			],
 			[
 				"mouse",
@@ -151,7 +191,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4404,
+				"buffer_size": 7546,
 				"line_ending": "Windows"
 			}
 		},
@@ -159,15 +199,31 @@
 			"file": "scss/game.scss",
 			"settings":
 			{
-				"buffer_size": 3493,
+				"buffer_size": 4866,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "scss/_skin.default.scss",
+			"file": "scss/_dice.scss",
 			"settings":
 			{
-				"buffer_size": 87,
+				"buffer_size": 1540,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/game.js",
+			"settings":
+			{
+				"buffer_size": 2878,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/animate-custom.css",
+			"settings":
+			{
+				"buffer_size": 3044,
 				"line_ending": "Windows"
 			}
 		}
@@ -178,6 +234,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"scs",
+				"Set Syntax: SCSS"
+			],
 			[
 				"gi",
 				"Git: Push"
@@ -268,19 +328,27 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss",
+		"/C/Users/Gil/Dropbox/Projects/Game dev/source/scss/_skin.default.scss",
+		"/C/Users/Gil/Dropbox/Projects/Game dev/source/test.html",
+		"/C/Users/Gil/Dropbox/Projects/Game dev/source/index.html",
+		"/C/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss",
+		"/C/Users/Gil/Dropbox/Projects/Game dev/source/js/game.js",
+		"/C/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss",
+		"/C/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.css",
+		"/C/Users/Gil/Dropbox/Projects/Game dev/source/css/test.css",
+		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
+		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 		"/C/Users/Gil/Dropbox/Projects/Game dev/source/css/game.css",
 		"/C/Users/Gil/Dropbox/Projects/Game dev/source/scss/skin.default.scss",
 		"/C/Users/Gil/Dropbox/Projects/Game dev/source/css/skin.default.css",
-		"/C/Users/Gil/Dropbox/Projects/Game dev/source/js/game.js",
 		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
 		"/D/Dev/Pro HTML5 Games/js/game.js",
-		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
 		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/README.md",
-		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
-		"/C/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss",
 		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/JsFormat/Default (Windows).sublime-keymap",
 		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/JSLint/JSLint.sublime-build",
 		"/C/Users/Gil/AppData/Roaming/Sublime Text 2/Packages/JSLint/JSLint.sublime-settings",
@@ -288,7 +356,6 @@
 		"/C/Users/Gil/Dropbox/Projects/Game dev/source/config.rb",
 		"/C/Users/Gil/Dropbox/Projects/Game dev/source/css/ie.css",
 		"/C/Users/Gil/Dropbox/Projects/Game dev/TheGame.sublime-project",
-		"/C/Users/Gil/Dropbox/Projects/Game dev/source/index.html",
 		"/C/Users/Gil/Dropbox/Projects/Game dev/source/css/game.scss",
 		"/C/Users/Gil/Dropbox/Projects/Game/ctc/index.html",
 		"/C/Users/Gil/Dropbox/Projects/Game/ctc/css/game.scss",
@@ -319,7 +386,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -330,6 +397,32 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dice",
+			"px",
+			"$dice-size",
+			"90",
+			"10",
+			"mg.cssMap",
+			"2",
+			"77px",
+			"134px",
+			"20px",
+			".dot.",
+			"mg.duration.rotate",
+			"rotate",
+			"mg.utils",
+			"el",
+			"$transform-duration",
+			"selectorsMap",
+			";\n",
+			"indent",
+			"smart",
+			"tab",
+			"tabstops",
+			"indent",
+			"use_spaces",
+			"white",
+			"notifications",
 			"blabla",
 			"\\"
 		],
@@ -339,6 +432,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"cssMap"
 		],
 		"reverse": false,
 		"show_context": false,
@@ -349,7 +443,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -357,15 +451,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 4404,
+						"buffer_size": 7546,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3022,
-								3022
+								4535,
+								4535
 							]
 						],
 						"settings":
@@ -437,10 +531,6 @@
 							[
 							],
 							"pyflakes_ignore_import_*": true,
-							"rulers":
-							[
-								120
-							],
 							"sublimelinter": true,
 							"sublimelinter_delay": 2,
 							"sublimelinter_disable":
@@ -462,10 +552,11 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 1457.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -475,15 +566,27 @@
 					"file": "scss/game.scss",
 					"settings":
 					{
-						"buffer_size": 3493,
+						"buffer_size": 4866,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1543,
-								1543
+								4634,
+								4634
+							],
+							[
+								4674,
+								4674
+							],
+							[
+								4712,
+								4712
+							],
+							[
+								4747,
+								4747
 							]
 						],
 						"settings":
@@ -577,28 +680,259 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 855.0,
+						"translation.y": 2313.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "scss/_skin.default.scss",
+					"file": "scss/_dice.scss",
 					"settings":
 					{
-						"buffer_size": 87,
+						"buffer_size": 1540,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								19
+								861,
+								861
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jslint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/game.js",
+					"settings":
+					{
+						"buffer_size": 2878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1362,
+								1362
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jslint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/animate-custom.css",
+					"settings":
+					{
+						"buffer_size": 3044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1168,
+								1168
 							]
 						],
 						"settings":
@@ -692,7 +1026,8 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -752,6 +1087,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"g",
+				"source/scss/game.scss"
+			],
 			[
 				"",
 				"index.html"

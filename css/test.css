@@ -1,0 +1,61 @@
+/* line 1, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper {
+  position: relative;
+  width: 200px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+/* line 7, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dice {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #aaaaaa;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+/* line 15, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dice > DIV {
+  display: none;
+}
+/* line 19, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dice > .show {
+  display: block;
+}
+/* line 24, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dot {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  background: #444;
+  box-shadow: inset 5px 0 10px black;
+}
+/* line 32, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dot.center {
+  margin: 77px 0 0 77px;
+}
+/* line 35, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dot.dtop {
+  margin-top: 20px;
+}
+/* line 38, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dot.dleft {
+  margin-left: 134px;
+}
+/* line 41, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dot.dright {
+  margin-left: 20px;
+}
+/* line 44, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dot.dbottom {
+  margin-top: 134px;
+}
+/* line 47, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dot.center.dleft {
+  margin: 77px 0 0 20px;
+}
+/* line 50, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/test.scss */
+.dice-wrapper .dot.center.dright {
+  margin: 77px 0 0 134px;
+}

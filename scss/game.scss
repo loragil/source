@@ -1,5 +1,9 @@
 @import "compass/reset";
 @import '_skin.default';
+@import '_dice';
+@import '_dashboard';
+@import '_chat';
+@import '_effects';
 
 
 /************************ GENERAL STYLES ************************/
@@ -31,261 +35,141 @@ BODY{
 /************************ GAME UI STYLES ************************/
 .monopoly{
 	margin:2em;
+}
 
-
-	/************************ DASH BOARD ************************/
-	.dashboard{
-		width:25%;
-		float: left;
-		
-		/* CHAT*/
-		.chat{
-			margin-right:2em;
-			
-			.messages{
-				padding: .5em;
-				height:35em;			
-				border:2px solid #aaa;
-				border-radius:$main-corner-radius;
-				
-				EM{
-					&.player-a{
-						color:$player-color-A;
-					}
-
-					&.player-b{
-						color:$player-color-B;
-					}
-				}
-			}
-
-			.input-wrapper{
-				border:2px solid #aaa;
-				position: relative;
-				margin-top: .5em;
-				width: 100%;
-				height: 3em;
-				border-radius:$main-corner-radius;
-				padding: 0.3em 0.5em;
-
-				.write{
-					width: 70%;
-					position: absolute;
-					left:.5em;
-					padding: 0 .5em;
-				}
-
-				.send{
-					width: 25%;
-					height: 2em;
-					position: absolute;
-					right:.5em;
-					background-color: #aaa;
-					border-radius: 3px;
-					text-align: center;
-					cursor:pointer;
-				}
-			}
-		}
-
-		/* BUTTONS */
-		.actions{
-			margin-top: 1.5em;
-			text-align: center;
-			
-			.btn{
-				width: 30%;
-				height:6em;
-				margin: .5em .5em 0 0;
-				line-height: 6em;
-				border-radius:$main-corner-radius;
-				border:2px solid #aaa;	
-				float: left;	
-				cursor:pointer;
-				
-				&.manage-assets{
-					line-height: 2.5em;
-				}		
-			}
-		}
+/************************ GAME BOARD ************************/
+.gameboard{
+	width: 75%;
+	float: right;
+	
+	TABLE{
+		width:100%;
 	}
 
-	/************************ GAME BOARD ************************/
-	.gameboard{
-		width: 75%;
-		float: right;
+	.vertical TD{
+		width: 8.6%;
+		height: 6.5em;
+	}
+
+	.horizontal TD{
+		width: 7%;
+		height: 7em;
+	}
+
+	.corner{
+		width: 5.5% !important;		
+	}
+
+	TD{
+		border:1px solid #000000;
+		text-align: center;
 		
-		TABLE{
-			width:100%;
+		SPAN{
+			font-size: 2em;
+		}
+		
+		&.red{
+			background-color: #eb4b35;
+		}
+		&.orange{
+			background-color: #eba535;
+		}
+		&.yellow{
+			background-color: #f2e231;
+		}
+		&.green{
+			background-color: #50c24d;
+		}
+		&.blue{
+			background-color: #4c78e9;
+		}
+		&.pink{
+			background-color: #da67d9;
+		}
+		&.purple{
+			background-color: #8465e9;
+		}
+		&.celest{
+			background-color: #1eaaeb;
+		}
+	}	
+
+	.middle{	
+		position: relative;	
+		//vertical-align: top;
+		
+		.logo-bg{
+			background: url(../img/monopoly-bg.png) no-repeat center;
+			background-size: contain;
+			height: 158px;
+			margin: 2em;
+			//opacity: .3;
 		}
 
-		.vertical TD{
-			width: 8.6%;
-			height: 6.5em;
-		}
-
-		.horizontal TD{
-			width: 7%;
-			height: 7em;
-		}
-
-		.corner{
-			width: 5.5% !important;		
-		}
-
-		TD{
-			border:1px solid #000000;
-			text-align: center;
+		.deck{
+			display: block;
+			position: absolute;
+			width: 16em;
+			height: 12em;
+			line-height: 12em;
+			top: 50%;
+			margin-top: -6em;
+			-webkit-transform: rotate(-45deg);
+			background: #fff;
+			opacity: 0.8;
+			border-radius: 1em;
+			box-shadow: -0.2em 0.1em 0.5em -0.1em #222222, -0.4em 0.2em 1em 0.2em #777777;
 			
+			&.chest{
+				left: 10%;
+			}
+
+			&.chance{
+				right: 10%;
+			}
+		}		
+	}
+
+	/* NOTIFICATIONS */
+	.notifications{
+		width:84%;
+		height: 10em;
+		background-color: #8465e9;
+		position: absolute;
+		bottom: 5em;
+		left:8%;
+		padding: 1em;
+		border-radius: 10px;
+
+		.message{
+			color: #AEADE9;
+			margin-top: 1em;
+			display: block;
+		}
+
+		.close{
+			width: 3em;
+			height: 3em;
+			position: absolute;
+			right: -1em;
+			top: -1em;
+			color:#aaa;
+			border: 2px solid #e6e6e6;
+			border-radius: 2em;
+			padding: 0.4em 0;
+			cursor:pointer;
+			background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(#f2f2f2, #cccccc);
+			box-shadow: inset 0 1px 1px rgba(191, 191, 191, 0.75), 0 2px 1px rgba(0, 0, 0, 0.25);
+
+			&:hover{
+				background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(#b3b3b3, #8c8c8c);
+				color:#e6e6e6;
+			}
+
 			SPAN{
 				font-size: 2em;
 			}
-			
-			&.red{
-				background-color: #eb4b35;
-			}
-			&.orange{
-				background-color: #eba535;
-			}
-			&.yellow{
-				background-color: #f2e231;
-			}
-			&.green{
-				background-color: #50c24d;
-			}
-			&.blue{
-				background-color: #4c78e9;
-			}
-			&.pink{
-				background-color: #da67d9;
-			}
-			&.purple{
-				background-color: #8465e9;
-			}
-			&.celest{
-				background-color: #1eaaeb;
-			}
-		}	
-
-		.middle{	
-			position: relative;	
-			vertical-align: top;
-			
-			.logo-bg{
-				background: url(../img/monopoly-bg.png) no-repeat center;
-				background-size: contain;
-				height: 158px;
-				margin: 2em;
-				//opacity: .3;
-			}
-
-			.deck{
-				display: block;
-				position: absolute;
-				border:2px solid #aaa;
-				width: 16em;
-				height: 12em;
-				line-height: 12em;
-				top: 50%;
-				margin-top: -6em;
-				-webkit-transform: rotate(-45deg);
-				
-				&.chest{
-					left: 10%;
-				}
-
-				&.chance{
-					right: 10%;
-				}
-			}
-
-			.dice{
-				width: $dice-size;
-				height: $dice-size;
-				line-height: $dice-size;
-				top: 50%;
-				margin-top: -($dice-size / 2);
-				position: absolute;
-				border:2px solid #000;
-				
-				&.dice-1{
-					left:50%;	
-					margin-left: -(($dice-size) + ($dice-size * 0.1));			
-				}
-
-				&.dice-2{
-					right:50%;
-					margin-right: -(($dice-size) + ($dice-size * 0.1));
-				}
-
-				SPAN{
-					opacity:1;
-					transition: opacity .25s ease-in-out;
-				}
-			}
-
-			.notifications{
-				width:84%;
-				height: 10em;
-				background-color: #8465e9;
-				position: absolute;
-				bottom: 5em;
-				left:8%;
-				padding: 1em;
-				
-				.message{
-					color: #AEADE9;
-					margin-top: 1em;
-					display: block;
-				}
-
-				.close{
-					width: 3em;
-					height: 3em;
-					position: absolute;
-					right: -1em;
-					top: -1em;
-					color:#aaa;
-					border: 2px solid #e6e6e6;
-					border-radius: 2em;
-					padding: 0.4em 0;
-					cursor:pointer;
-					background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(#f2f2f2, #cccccc);
-					box-shadow: inset 0 1px 1px rgba(191, 191, 191, 0.75), 0 2px 1px rgba(0, 0, 0, 0.25);
-					
-					&:hover{
-						background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(#b3b3b3, #8c8c8c);
-						color:#e6e6e6;
-					}
-
-					SPAN{
-						font-size: 2em;
-					}
-				}
-			}
 		}
 	}
+}
 
-	/************************ EFFECTS ************************/
-	.fade-out{
-		opacity: 0;
-		-webkit-transform: scale(.75);
-   		transition: all .5s ease-in-out;
-	}
-
-	.fade-in{
-		opacity: 1;
-		-webkit-transform: scale(1);
-   		transition: all .25s ease-in-out;
-	}
-
-	.rotate{
-		-webkit-transform: rotate(720deg);
-		transition: all  $transform-rotate-duration ease-in-out;
-		
-		SPAN{
-			opacity:0 !important;
-			transition: opacity .5s ease-in-out;
-		}
-	}
-} 

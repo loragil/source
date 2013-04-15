@@ -1,0 +1,45 @@
+/*********************************************************/
+/*----------------------- EFFECTS -----------------------*/
+/*********************************************************/
+
+.fade-out{
+	opacity: 0;
+	-webkit-transform: scale(.75);
+	transition: all .5s ease-in-out;
+}
+
+.fade-in{
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transition: all .25s ease-in-out;
+}
+
+.rotate{
+	-webkit-transform: rotate(720deg);
+	transition: all  $transform-rotate-duration ease-in-out;
+	transition-delay: .5s;
+	
+	&.dice-2{
+		-webkit-animation-direction: alternate;
+		-moz-animation-direction: alternate;
+		-o-animation-direction: alternate;
+		animation-direction: alternate;
+		transition-delay: .75s;
+	}
+
+	.dot{
+		opacity:0 !important;
+		transition: opacity .5s ease-in-out;
+	}
+}
+
+.shake{
+	&.dice-2{
+		-webkit-animation-delay:0.25s;
+	}
+
+	.dot{
+		opacity:0 !important;
+		transition: opacity .5s ease-in-out;
+	}
+}

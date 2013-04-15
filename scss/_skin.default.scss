@@ -1,6 +1,8 @@
+/* VARIABLES DEFINED HERE:  */
 $main-corner-radius:5px;
 
-$dice-size:5em;
+$dice-dimension:5em;
+$dice-dot-size: $dice-dimension / 5;
 
 $player-color-A:red;
 $player-color-B:green;

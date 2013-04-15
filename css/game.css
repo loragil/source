@@ -63,104 +63,102 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/************************ GENERAL STYLES ************************/
-/* line 6, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-BODY {
-  font-size: 62.5%;
-  font-family: arial;
+/* VARIABLES DEFINED HERE:  */
+/********************************************************/
+/*------------------------ DICE ------------------------*/
+/********************************************************/
+/* line 5, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper {
+  position: relative;
+  width: 5em;
+  margin: 0 auto;
 }
-/* line 10, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-BODY * {
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
+/* line 10, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper.dice-1 {
+  left: 50%;
+  margin-left: -5.5em;
 }
-/* line 16, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-BODY INPUT {
-  border: 0;
-  padding: 0;
+/* line 15, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper.dice-2 {
+  right: 50%;
+  margin-right: -5.5em;
 }
-/* line 21, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-BODY SPAN {
-  font-size: 2em;
+/* line 20, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper .dice {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  border-radius: 0.5em;
+  margin-top: -2.5em;
+  box-shadow: -0.2em 0.1em 0.5em -0.1em #222222, -0.4em 0.2em 1em 0.2em #777777;
 }
-/* line 25, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-BODY EM {
-  font-style: italic;
+/* line 28, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper .dice > DIV {
+  display: none;
+}
+/* line 32, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper .dice > .show {
+  display: block;
+}
+/* line 37, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper .dot {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  background: #888;
+  box-shadow: inset 0.1em 0 0.1em #333333;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+/* line 47, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper .dot.center {
+  top: 50%;
+  right: 50%;
+  margin-right: -0.5em;
+  margin-top: -0.5em;
+}
+/* line 53, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper .dot.dtop {
+  top: 12%;
+}
+/* line 56, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper .dot.dleft {
+  margin-left: 12%;
+  left: 0;
+}
+/* line 60, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper .dot.dright {
+  margin-right: 12%;
+  right: 0;
+}
+/* line 64, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper .dot.dbottom {
+  margin-top: 88%;
+  top: -1em;
+}
+/* line 68, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dice.scss */
+.dice-wrapper .dot.center.dleft, .dice-wrapper .dot.center.dright {
+  top: 50%;
+  margin-top: -0.5em;
 }
 
-/************************ GAME UI STYLES ************************/
-/* line 32, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly {
-  margin: 2em;
-  /************************ DASH BOARD ************************/
-  /************************ GAME BOARD ************************/
-  /************************ EFFECTS ************************/
-}
-/* line 37, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard {
+/********************************************************/
+/*--------------------- DASH BOARD ---------------------*/
+/********************************************************/
+/* line 5, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dashboard.scss */
+.dashboard {
   width: 25%;
   float: left;
-  /* CHAT*/
   /* BUTTONS */
 }
-/* line 42, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard .chat {
-  margin-right: 2em;
-}
-/* line 45, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard .chat .messages {
-  padding: .5em;
-  height: 35em;
-  border: 2px solid #aaaaaa;
-  border-radius: 5px;
-}
-/* line 52, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard .chat .messages EM.player-a {
-  color: red;
-}
-/* line 56, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard .chat .messages EM.player-b {
-  color: green;
-}
-/* line 62, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard .chat .input-wrapper {
-  border: 2px solid #aaaaaa;
-  position: relative;
-  margin-top: .5em;
-  width: 100%;
-  height: 3em;
-  border-radius: 5px;
-  padding: 0.3em 0.5em;
-}
-/* line 71, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard .chat .input-wrapper .write {
-  width: 70%;
-  position: absolute;
-  left: .5em;
-  padding: 0 0.5em;
-}
-/* line 78, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard .chat .input-wrapper .send {
-  width: 25%;
-  height: 2em;
-  position: absolute;
-  right: .5em;
-  background-color: #aaa;
-  border-radius: 3px;
-  text-align: center;
-  cursor: pointer;
-}
-/* line 92, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard .actions {
+/* line 10, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dashboard.scss */
+.dashboard .actions {
   margin-top: 1.5em;
   text-align: center;
 }
-/* line 96, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard .actions .btn {
+/* line 14, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dashboard.scss */
+.dashboard .actions .btn {
   width: 30%;
   height: 6em;
   margin: 0.5em 0.5em 0 0;
@@ -170,133 +168,246 @@ BODY EM {
   float: left;
   cursor: pointer;
 }
-/* line 106, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .dashboard .actions .btn.manage-assets {
+/* line 24, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_dashboard.scss */
+.dashboard .actions .btn.manage-assets {
   line-height: 2.5em;
 }
-/* line 114, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard {
+
+/********************************************************/
+/*------------------------ CHAT ------------------------*/
+/********************************************************/
+/* line 5, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat {
+  margin-right: 2em;
+}
+/* line 8, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat .messages {
+  padding: .5em;
+  height: 35em;
+  border: 2px solid #aaaaaa;
+  border-radius: 5px;
+}
+/* line 15, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat .messages EM.player-a {
+  color: red;
+}
+/* line 19, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat .messages EM.player-b {
+  color: green;
+}
+/* line 25, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat .input-wrapper {
+  border: 2px solid #aaaaaa;
+  position: relative;
+  margin-top: .5em;
+  width: 100%;
+  height: 3em;
+  border-radius: 5px;
+  padding: 0.3em 0.5em;
+}
+/* line 34, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat .input-wrapper .write {
+  width: 70%;
+  position: absolute;
+  left: .5em;
+  padding: 0 0.5em;
+}
+/* line 41, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat .input-wrapper .send {
+  width: 25%;
+  height: 2em;
+  position: absolute;
+  right: .5em;
+  background-color: #aaa;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*********************************************************/
+/*----------------------- EFFECTS -----------------------*/
+/*********************************************************/
+/* line 5, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_effects.scss */
+.fade-out {
+  opacity: 0;
+  -webkit-transform: scale(0.75);
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 11, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_effects.scss */
+.fade-in {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transition: all 0.25s ease-in-out;
+}
+
+/* line 17, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_effects.scss */
+.rotate {
+  -webkit-transform: rotate(720deg);
+  transition: all 1.5s ease-in-out;
+  transition-delay: .5s;
+}
+/* line 22, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_effects.scss */
+.rotate.dice-2 {
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+  transition-delay: .75s;
+}
+/* line 30, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_effects.scss */
+.rotate .dot {
+  opacity: 0 !important;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* line 37, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_effects.scss */
+.shake.dice-2 {
+  -webkit-animation-delay: 0.25s;
+}
+/* line 41, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_effects.scss */
+.shake .dot {
+  opacity: 0 !important;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/************************ GENERAL STYLES ************************/
+/* line 10, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+BODY {
+  font-size: 62.5%;
+  font-family: arial;
+}
+/* line 14, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+BODY * {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+/* line 20, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+BODY INPUT {
+  border: 0;
+  padding: 0;
+}
+/* line 25, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+BODY SPAN {
+  font-size: 2em;
+}
+/* line 29, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+BODY EM {
+  font-style: italic;
+}
+
+/************************ GAME UI STYLES ************************/
+/* line 36, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.monopoly {
+  margin: 2em;
+}
+
+/************************ GAME BOARD ************************/
+/* line 41, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard {
   width: 75%;
   float: right;
+  /* NOTIFICATIONS */
 }
-/* line 118, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TABLE {
+/* line 45, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TABLE {
   width: 100%;
 }
-/* line 122, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .vertical TD {
+/* line 49, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .vertical TD {
   width: 8.6%;
   height: 6.5em;
 }
-/* line 127, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .horizontal TD {
+/* line 54, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .horizontal TD {
   width: 7%;
   height: 7em;
 }
-/* line 132, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .corner {
+/* line 59, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .corner {
   width: 5.5% !important;
 }
-/* line 136, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TD {
+/* line 63, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TD {
   border: 1px solid black;
   text-align: center;
 }
-/* line 140, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TD SPAN {
+/* line 67, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TD SPAN {
   font-size: 2em;
 }
-/* line 144, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TD.red {
+/* line 71, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TD.red {
   background-color: #eb4b35;
 }
-/* line 147, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TD.orange {
+/* line 74, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TD.orange {
   background-color: #eba535;
 }
-/* line 150, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TD.yellow {
+/* line 77, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TD.yellow {
   background-color: #f2e231;
 }
-/* line 153, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TD.green {
+/* line 80, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TD.green {
   background-color: #50c24d;
 }
-/* line 156, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TD.blue {
+/* line 83, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TD.blue {
   background-color: #4c78e9;
 }
-/* line 159, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TD.pink {
+/* line 86, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TD.pink {
   background-color: #da67d9;
 }
-/* line 162, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TD.purple {
+/* line 89, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TD.purple {
   background-color: #8465e9;
 }
-/* line 165, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard TD.celest {
+/* line 92, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard TD.celest {
   background-color: #1eaaeb;
 }
-/* line 170, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle {
+/* line 97, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .middle {
   position: relative;
-  vertical-align: top;
 }
-/* line 174, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .logo-bg {
+/* line 101, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .middle .logo-bg {
   background: url(../img/monopoly-bg.png) no-repeat center;
   background-size: contain;
   height: 158px;
   margin: 2em;
 }
-/* line 182, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .deck {
+/* line 109, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .middle .deck {
   display: block;
   position: absolute;
-  border: 2px solid #aaaaaa;
   width: 16em;
   height: 12em;
   line-height: 12em;
   top: 50%;
   margin-top: -6em;
   -webkit-transform: rotate(-45deg);
+  background: #fff;
+  opacity: 0.8;
+  border-radius: 1em;
+  box-shadow: -0.2em 0.1em 0.5em -0.1em #222222, -0.4em 0.2em 1em 0.2em #777777;
 }
-/* line 193, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .deck.chest {
+/* line 123, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .middle .deck.chest {
   left: 10%;
 }
-/* line 197, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .deck.chance {
+/* line 127, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .middle .deck.chance {
   right: 10%;
 }
-/* line 202, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .dice {
-  width: 5em;
-  height: 5em;
-  line-height: 5em;
-  top: 50%;
-  margin-top: -2.5em;
-  position: absolute;
-  border: 2px solid black;
-}
-/* line 211, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .dice.dice-1 {
-  left: 50%;
-  margin-left: -5.5em;
-}
-/* line 216, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .dice.dice-2 {
-  right: 50%;
-  margin-right: -5.5em;
-}
-/* line 221, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .dice SPAN {
-  opacity: 1;
-  transition: opacity 0.25s ease-in-out;
-}
-/* line 227, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .notifications {
+/* line 134, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .notifications {
   width: 84%;
   height: 10em;
   background-color: #8465e9;
@@ -304,15 +415,16 @@ BODY EM {
   bottom: 5em;
   left: 8%;
   padding: 1em;
+  border-radius: 10px;
 }
-/* line 236, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .notifications .message {
+/* line 144, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .notifications .message {
   color: #AEADE9;
   margin-top: 1em;
   display: block;
 }
-/* line 242, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .notifications .close {
+/* line 150, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .notifications .close {
   width: 3em;
   height: 3em;
   position: absolute;
@@ -326,34 +438,12 @@ BODY EM {
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(#f2f2f2, #cccccc);
   box-shadow: inset 0 1px 1px rgba(191, 191, 191, 0.75), 0 2px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 256, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .notifications .close:hover {
+/* line 164, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .notifications .close:hover {
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(#b3b3b3, #8c8c8c);
   color: #e6e6e6;
 }
-/* line 261, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .gameboard .middle .notifications .close SPAN {
+/* line 169, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
+.gameboard .notifications .close SPAN {
   font-size: 2em;
-}
-/* line 270, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .fade-out {
-  opacity: 0;
-  -webkit-transform: scale(0.75);
-  transition: all 0.5s ease-in-out;
-}
-/* line 276, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .fade-in {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transition: all 0.25s ease-in-out;
-}
-/* line 282, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .rotate {
-  -webkit-transform: rotate(720deg);
-  transition: all 1.5s ease-in-out;
-}
-/* line 286, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
-.monopoly .rotate SPAN {
-  opacity: 0 !important;
-  transition: opacity 0.5s ease-in-out;
 }

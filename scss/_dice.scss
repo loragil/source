@@ -1,0 +1,73 @@
+/********************************************************/
+/*------------------------ DICE ------------------------*/
+/********************************************************/
+
+.dice-wrapper {
+    position: relative;
+    width: $dice-dimension;
+    margin: 0 auto;
+
+    &.dice-1{
+        left:50%;   
+        margin-left: -(($dice-dimension) + ($dice-dimension * 0.1));            
+    }
+
+    &.dice-2{
+        right:50%;
+        margin-right: -(($dice-dimension) + ($dice-dimension * 0.1));
+    }
+
+    .dice {
+        position: absolute;
+        width: $dice-dimension;
+        height: $dice-dimension;
+        border-radius: $dice-dot-size / 2;
+        margin-top: -($dice-dimension / 2);
+        box-shadow: -0.2em 0.1em 0.5em -0.1em #222,-0.4em 0.2em 1em 0.2em #777;
+        
+        & > DIV{
+            display: none;
+        }
+
+        & > .show{
+            display:block;
+        }
+    }
+
+    .dot {
+        position: absolute;
+        width: $dice-dot-size;
+        height: $dice-dot-size;
+        border-radius: $dice-dot-size / 2;
+        background: #888;
+        box-shadow: inset .1em 0 .1em #333;
+        opacity: 1;
+        transition: opacity .25s ease-in-out;
+
+        &.center {
+            top: 50%;
+            right: 50%;
+            margin-right: -($dice-dot-size / 2);
+            margin-top: -($dice-dot-size / 2);
+        }
+        &.dtop {
+            top:12%;
+        }
+        &.dleft {
+            margin-left: 12%;
+            left: 0;
+        }
+        &.dright {
+            margin-right: 12%;
+            right: 0;
+        }
+        &.dbottom {
+            margin-top: 88%;
+            top: -($dice-dot-size);
+        }
+        &.center.dleft, &.center.dright {
+            top: 50%;
+            margin-top: -($dice-dot-size / 2);
+        }
+    }
+}
