@@ -8,35 +8,49 @@ var mg = mg || {};//namespace declaration ('mg' stands for 'Monopoly Game').
 	"use strict";
 
 	//unified access to css selectors & classes (used mainly wihtin 'mg.elements')
-    mg.cssMap = {
-    	//object selectors:
-    	"main": ".monopoly",
-    	"notifications": ".notifications",
-    	"close": ".close",
-    	"logo": ".logo-bg",
-    	"send": ".send",
-    	"roll": ".roll",
-    	"log": ".log",
-    	"chat": ".chat",
-    	"dieA": ".dice-1",
-    	"dieB": ".dice-2",
+    mg.setup = {
+        cssMap: {
+        	//object (& other DOM elements) selectors:
+        	"main": ".monopoly",
+            "notifications": ".notifications",
+            "message": ".message",//notification area
+            "chatter": ".chatter",//chat area
+            "close": ".close",
+            "logo": ".logo-bg",
+            "send": ".send",
+            "roll": ".roll",
+            "log": ".log",
+            "chat": ".chat",
+            "input": ".write",
+            "dieA": ".dice-1",
+            "dieB": ".dice-2",
+            "dieVisibleSide": "DIV > DIV",
+            "dieSpecificSide": ".side-",
 
-        //visual effects classes (no '.' or '#' in front of the selector)
-        "fadeIn": "fade-in",
-        "fadeOut": "fade-out",
-        "rotate": "rotate",
-        "bounceIn":"animated bounceIn",
-        "fadeOutDown":"animated fadeOutDown",
-        "shake":"animated shake",
+            //visual effects classes (no '.' or '#' in front of the selector)
+            "fadeIn": "fade-in",
+            "fadeOut": "fade-out",
+            "rotate": "rotate",
+            "bounceIn":"animated bounceIn",
+            "fadeOutDown":"animated fadeOutDown",
+            "shake":"animated shake",
+            "playerA": "player-a",
+            "playerB": "player-b",
+            "playerC": "player-c",
+            "playerD": "player-d",
 
-        //state classes
-        "show":"show"
+            //state classes
+            "show":"show"
+        },
+
+        duration: {
+        	"rotate":"1500",
+        	"rotatePlusDelay":"1750"
+        },
+
+        templates: {
+            "chatMsg":"<span><em></em></span>"
+        }
     };
 
-    mg.duration = {
-    	"rotate":"1500",
-    	"rotatePlusDelay":"1750"
-    };
-
-    
 }());

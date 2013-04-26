@@ -181,21 +181,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 2em;
 }
 /* line 8, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
-.chat .messages {
+.chat .chatter {
   padding: .5em;
   height: 35em;
   border: 2px solid #aaaaaa;
   border-radius: 5px;
+  overflow-y: auto;
 }
-/* line 15, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
-.chat .messages EM.player-a {
+/* line 16, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat .chatter EM.player-a {
   color: red;
 }
-/* line 19, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
-.chat .messages EM.player-b {
+/* line 20, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat .chatter EM.player-b {
   color: green;
 }
-/* line 25, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+/* line 24, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat .chatter EM.player-c {
+  color: gray;
+}
+/* line 28, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+.chat .chatter EM.player-d {
+  color: maroon;
+}
+/* line 34, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
 .chat .input-wrapper {
   border: 2px solid #aaaaaa;
   position: relative;
@@ -205,14 +214,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 5px;
   padding: 0.3em 0.5em;
 }
-/* line 34, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+/* line 43, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
 .chat .input-wrapper .write {
   width: 70%;
   position: absolute;
   left: .5em;
   padding: 0 0.5em;
 }
-/* line 41, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
+/* line 50, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/_chat.scss */
 .chat .input-wrapper .send {
   width: 25%;
   height: 2em;
@@ -320,7 +329,7 @@ BODY EM {
 /* line 49, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
 .gameboard .vertical TD {
   width: 8.6%;
-  height: 6.5em;
+  height: 5.8em;
 }
 /* line 54, C:/Users/Gil/Dropbox/Projects/Game dev/source/scss/game.scss */
 .gameboard .horizontal TD {
@@ -412,7 +421,7 @@ BODY EM {
   height: 10em;
   background-color: #8465e9;
   position: absolute;
-  bottom: 5em;
+  top: 5em;
   left: 8%;
   padding: 1em;
   border-radius: 10px;
